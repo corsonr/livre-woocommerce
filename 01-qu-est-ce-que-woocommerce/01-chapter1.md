@@ -159,3 +159,9 @@ Ces plugins sont certifiés et vous garantissent donc une qualité irréprochabl
 Autre avantage: le support. Malgré le fait que ces extensions soient gratuites, vous pouvez bénéficier de support par les équipes d'Automattic. Plutôt cool non ?
 
 Pour finir cette section, je tenais aussi à vous indiquer qu'il est possible de récupérer certains des plugins officiels depuis la page "Mon Compte" sur http://woocommerce.com.
+
+# Installer des plugins officiels depuis woocommerce.com
+
+# Créer les pages de la boutique
+
+# Le System Status et les outils disponibles à tout moment
