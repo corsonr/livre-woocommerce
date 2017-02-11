@@ -4,15 +4,15 @@
 
 WooCommerce est le système de e-commerce le plus populaire au monde à l'heure ou j'écris ces ligne, mais ce ne fut pas toujours le cas. Avant de commencer à vous guider au travers des différents chapitres de ce cours, je souhaiterais vous apporter quelques informations sur le système en lui même.
 
-WooCommerce est en fait un fork d'un autre plugin de e-commerce appelé Jigoshop. En effet Jigoshop étant un project open-source, il est tout à faut possible de partir du code de base pour créer un plugin nouveau. Et c'est ainsi que deux développeurs, Mike Jolley et James Koster, tout deux travaillant pour la société JigoWatt on créé en Mai 2011 le plugin Jigoshop.
+WooCommerce est en fait un fork d'un autre plugin de e-commerce appelé Jigoshop. En effet Jigoshop étant un projet open-source, il était tout à fait possible de partir du code de base pour créer un plugin nouveau. Et c'est ainsi que deux développeurs, Mike Jolley et James Koster, tout deux travaillant pour la société JigoWatt on créé en Mai 2011 le plugin Jigoshop.
 
 ## De Jigoshop à WooCommerce
 
-Le plugin Jigoshop fit un véritable carton lors de sa première année, si bien qu'une société Sud Africaine du nom de WooThemes proposa de racheter les droits d'utilisation de Jigoshop. Jigowatt refusa l'offre. Mais WooThemes ne s'arreta pas la: en effet, WooThemes débaucha Mike Jolley et James Koster et forka Jigoshop pour créer le projet WooCommerce.
+Le plugin Jigoshop fit un véritable carton lors de sa première année, si bien qu'une société Sud-Africaine du nom de WooThemes proposa de racheter les droits d'utilisation de Jigoshop. Jigowatt refusa l'offre. Mais WooThemes ne s'arreta pas la: en effet, WooThemes débaucha Mike Jolley et James Koster et forka purement et simplement Jigoshop pour créer le projet WooCommerce.
 
-Ayant perdu les deux créateurs du projet de leur plateforme ecommerce, Jigowatt continua de faire évoluer Jigoshop, mais à une vitesse moindre, puis en 2013 décida de se re-focaliser davantage sur son métier de base: le web design.
+Ayant perdu les deux créateurs du projet de leur plateforme e-commerce, Jigowatt continua de faire évoluer Jigoshop, mais à une vitesse moindre, puis en 2013 décida de se re-center sur son métier de base: le web design.
 
-Pendant ce temps, le nombre de téléchargements de WooCommerce ne cessait d'augmenter, jusqu'a atteindre près de 20 millions de téléchargements (Janvier 2017). Le succès de WooCommerce fut tel que la société WooThemes fut, en 2015, achetée dans son intégralité par le Géant Automattic, la société éditrice de wordpress.org et wordpress.com. WooThemes possédait alors 50 employés, et ce rachat, le plus important jamais opéré par Automattic, fit grimper le nombre d'Automatticiens à près de 500.
+Pendant ce temps, le nombre de téléchargements de WooCommerce ne cessait d'augmenter, jusqu'a atteindre près de 20 millions de téléchargements (Janvier 2017). Le succès de WooCommerce fut tel que la société WooThemes fut, en 2015, achetée dans son intégralité par le géant Automattic, la société éditrice de wordpress.org et wordpress.com. WooThemes possédait alors 50 employés, et ce rachat, le plus important jamais opéré par Automattic, fit grimper le nombre d'Automatticiens à près de 500.
 
 En 2016 la société WooThemes devint WooCommerce, et c'est dorénavant plus de 100 personnes qui travaillent à temps plein sur le projet WooCommerce.
 
@@ -30,11 +30,11 @@ Nous rentrerons dans le détails des certaines de ces extensions au fur et à me
 
 WooCommerce est un plugin pour WordPress, ce qui veut dire que vous devez installer WordPress. WooCommerce ne peut se suffir à lui même.
 
-Vous pouvez installer WooCommerce sur un site WordPress déjà existant ou sur une installation toute fraiche. Cela n'a que peu d'importance. Mais gardez en tête que étant donné qu'un plugin de ecommerce est un peu plus complexe que la plupart des autres plugins, cela requiert quelques étapes lors de l'installation.
+Vous pouvez installer WooCommerce sur un site WordPress déjà existant ou sur une installation toute fraiche. Cela n'a que peu d'importance. Mais gardez en tête qu'étant donné qu'un plugin de ecommerce est un peu plus complexe que la plupart des autres plugins, cela requiert quelques étapes lors de l'installation.
 
 ### Avant de commencer
 
-Vérifiez que vous possédez les droits nécessaire dans WordPress pour installer un nouveau plugin, si ce n'est pas le cas, vous devrez rentrer en contact avec l'administrateur du site. La façon la plus simple de procéder est de vérifier que votre role utilisateur est "administrateur".
+Vérifiez que vous possédez les droits nécessaire dans WordPress pour installer un nouveau plugin, si ce n'est pas le cas, vous devrez rentrer en contact avec l'administrateur du site. La façon la plus simple de procéder est de vérifier que votre rôle utilisateur est "administrateur".
 
 ### Lancer l'installation
 
@@ -161,6 +161,37 @@ Pour finir cette section, je tenais aussi à vous indiquer qu'il est possible de
 
 ## Installer des plugins officiels depuis woocommerce.com
 
-## Créer les pages de la boutique
+WooCommerce propose des plugins officiels disponibles exclusivement sur le site woocommerce.com. L'installation de ces plugins est manuelle car ils ne sont pas stockés sur wordpress.org. Vous devez donc les télécharger depuis votre la page "My Downloads" surf woocommerce.com puis les uploader sur votre server.
+
+WooCommerce met à votre disposition un guide sur l'installation et la mise à jour des plugins officiels; ce guide est disponible à l'adresse suivante: https://docs.woocommerce.com/document/installing-and-activating-woocommerce-extensions/
+
+Le processus est toutefois relativement simple:
+
+1. Télécharger le plugin depuis votre compte woocommerce.com
+2. Aller dans la section `Extensions` de votre site web
+3. Cliquer sur `Mettre une extension en ligne`
+4. Glisser/déposer le fichier au format zip téléchargé depuis woocommerce.com dans la section suivante:
+
+![](../images/01/wc-install-plugins-manually.png)
+
+Puis cliquer sur `installer`. L'activation est ensuite la même que pour les plugins du répertoire wordpress.org.
 
 ## Le System Status et les outils disponibles à tout moment
+
+Une fois WooCommerce activé et configuré, vous avez accès à diverses sections très utiles auxquelles vous aurez souvent à faire lors du développement de votre site ou lors de phases de débogage. Ces pages sont accessibles depuis le menu `WooCommerce > Etat du système` et elles sont au nombre de trois:
+
+1. Etat du système
+2. Outils
+3. Logs
+
+### Etat du système
+
+Cette page en fait une succession de tableaux contenant les informations relatives à votre installation. Vous y trouverez les notes relatives au server que vous utilisez, les indications de mise à jour des plugins et des thèmes, ou encore les fichiers de votre thème qui remplacent à la volée les fichiers par défaut de WooCommerce (nous reviendrons sur ce point plus tard).
+
+### outils
+
+WooCommerce dispose d'une série d'outils principalement liés au débogage. Ces outils sont également utilisés par les équipes de support WooCommerce et il est peu encouragé de bidouiller certaines de ces options au risque de causer des dommages irréversibles à votre site.
+
+### Logs
+
+WooCommerce, comme la plupart des extensions officielles, offre la possibilité de stocker des listes d'actions, lors par exemple du passage d'une commande, afin de cibler d'éventuelles erreurs. Ces informations sont nécessaire et généralement assez techniques, voire complètement incompréhensibles si vous n'êtes pas développeur.
